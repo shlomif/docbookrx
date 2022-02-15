@@ -21,7 +21,7 @@ opts = {
 #  delimit_source: true,
 #  idprefix: '_',
 #  idseparator: '_',
-#  normalize_ids: true,
+   normalize_ids: false,
 #  compat_mode: false,
 #  attributes: {
 #    'sourcedir' => '.',
