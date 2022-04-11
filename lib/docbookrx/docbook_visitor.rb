@@ -1244,7 +1244,8 @@ class DocbookVisitor
       if (ref = @attributes.key(url))
         url = %({#{ref}})
       end
-      append_text %(#{prefix}#{url}[#{label}])
+      escaped_label = label.gsub(/=/, '+++=+++')
+      append_text %(#{prefix}#{url}[#{escaped_label}])
     end
     false
   end
